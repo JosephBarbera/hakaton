@@ -46,7 +46,7 @@ st.divider()
 
 # ---------- таблица результатов ----------
 st.subheader("Список операций (отсортирован по риску)")
-top_n = st.slider("Показать операций:", 50, 500, 100)
+top_n = st.slider("Показать операций:", 50, 10000, 100)
 st.dataframe(results.head(top_n), use_container_width=True, hide_index=True)
 
 st.download_button("⬇ Выгрузить полный отчёт (CSV)",
